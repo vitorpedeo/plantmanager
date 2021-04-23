@@ -113,7 +113,7 @@ const PlantSelection: React.FC = () => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Header />
+        <Header headerMode="greeting" />
 
         <Text style={styles.title}>Em qual ambiente</Text>
         <Text style={styles.subtitle}>você quer colocar sua planta?</Text>

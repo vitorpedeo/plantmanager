@@ -35,6 +35,18 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontFamily: fonts.heading,
   },
+  removePlant: {
+    marginTop: 8,
+    paddingLeft: 15,
+    width: 100,
+    height: 95,
+    borderRadius: 20,
+    backgroundColor: colors.red,
+    position: 'relative',
+    right: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 });
 
 export default styles;

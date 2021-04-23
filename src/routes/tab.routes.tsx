@@ -1,8 +1,10 @@
 import React from 'react';
+import { Platform } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialIcons } from '@expo/vector-icons';
 
 import colors from '../styles/colors';
+import fonts from '../styles/fonts';
 
 import PlantSelection from '../pages/PlantSelection';
 import MyPlants from '../pages/MyPlants';
@@ -15,7 +17,11 @@ const TabRoutes: React.FC = () => {
         activeTintColor: colors.green, 
         inactiveTintColor: colors.heading,
         labelPosition: 'beside-icon',
+        labelStyle: {
+          fontFamily: fonts.text,
+        },
         style: {
+          paddingVertical: Platform.OS === 'ios' ? 20 : 0,
           height: 60,
         }
       }}
